@@ -1,0 +1,25 @@
+/* -----------------------------
+            header Style
+------------------------------------*/
+.header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.header-link {
+    position: relative;
+}
+
+.header-news::after {
+    content: '';
+    width: 30px;
+    height: 3px;
+    border-radius: 50px;
+    background-color: blue;
+    position: absolute;
+    top: 28px;
+    right: 78px;
+}
+
+/* -------------------------
+        Navigation style
+-------------------------------- */
