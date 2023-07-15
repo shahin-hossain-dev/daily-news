@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Daily News</title>
     <link rel="stylesheet" href="styles/style.css">
+    <!-- font awesomw cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
@@ -26,24 +31,55 @@
         </section>
     </header>
     <!-- main start -->
-    <main>
-        <section class="container">
+    <main class="container">
+        <section>
             <!-- nav container -->
-            <div id="nav-container">
-                <div class="d-flex justify-content-between">
-                    <div class="">Home</div>
-                    <div class="">Breaking news</div>
-                    <div class="">Regular news</div>
-                    <div class="">International news</div>
-                    <div class="">Sports</div>
-                    <div class="">Entertainment</div>
-                    <div class="">Arts</div>
-                    <div class="">All news</div>
+            <div id="catagory-container" class="d-flex justify-content-between flex-wrap">
+
+            </div>
+        </section>
+        <!-- news Container start -->
+        <section class="container mt-5">
+            <div class="row g-3 align-items-md-center">
+                <!-- news content -->
+                <div class="col-12 col-md-3 text-center">
+                    <img class="" src="images/image-1.png" alt="">
+                </div>
+                <div class="col-12 col-md-9 text-justify text-center text-md-start">
+                    <div>
+                        <h3>The best fashion influencers to follow for sartorial inspiration</h3>
+                        <p>From our favourite UK influencers to the best missives from Milan and the coolest New
+                            Yorkers,
+                            read on some of the best fashion blogs out there, and for even more inspiration, do head to
+                            our
+                            separate black fashion influencer round-up.
+
+                            Fancy some shopping deals? Check out these amazing sales: Zara Black Friday, ASOS Black
+                            Friday,
+                            Missoma Black Friday and Gucci Black Friday...</p>
+                    </div>
+                    <!-- news author, view, rating ,details -->
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex gap-2 align-items-center">
+                            <p><img src="images/copper.png" alt=""></p>
+                            <p class="fw-bold text-secondary">Jane Cooper</p>
+                        </div>
+                        <div class="d-flex gap-1 align-items-center">
+                            <p><img src="images/carbon_view.png" alt=""></p>
+                            <p class="fw-bold text-secondary">1.5M</p>
+                        </div>
+                        <div class="">
+                            <i class="fs-5 text-secondary fa-solid fa-arrow-right"></i>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        <!-- news Container end-->
     </main>
     <!-- main end -->
+
     <!-- header end -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
