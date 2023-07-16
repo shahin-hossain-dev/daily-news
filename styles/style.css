@@ -7,14 +7,15 @@
 
 .header-link {
     position: relative;
+
 }
 
 .header-news::after {
     content: '';
     width: 30px;
-    height: 3px;
+    height: 4px;
     border-radius: 50px;
-    background-color: blue;
+    background-color: gray;
     position: absolute;
     top: 28px;
     right: 78px;
@@ -23,3 +24,28 @@
 /* -------------------------
         Navigation style
 -------------------------------- */
+
+.category-item {
+    cursor: pointer;
+}
+
+.category-item:active {
+    color: gray;
+}
+
+.news-details {
+    text-align: justify;
+}
+
+.arrow-btn {
+    margin-top: 0.9rem;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#no-news {
+    min-height: 100vh;
+}

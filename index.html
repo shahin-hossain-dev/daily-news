@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Daily News</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/style.css">
     <!-- font awesomw cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -16,71 +17,73 @@
 </head>
 
 <body>
-    <!-- header start -->
-    <header class="header container py-4">
-        <section class="row ">
-            <!-- Site Title  -->
-            <div class=" col ">
-                <h1 class="fw-bold text-dark text-uppercase">Daily <span class="text-primary">News</span></h1>
-            </div>
-            <!-- header link -->
-            <div class="header-link col text-end">
-                <a class="header-news px-1 fw-semibold fs-5 text-decoration-none" href="#">News</a>
-                <a class="px-1 fw-semibold fs-5 text-secondary text-decoration-none" href="#">Blog</a>
-            </div>
-        </section>
-    </header>
-    <!-- main start -->
-    <main class="container">
-        <section>
-            <!-- nav container -->
-            <div id="catagory-container" class="d-flex justify-content-between flex-wrap">
-
-            </div>
-        </section>
-        <!-- news Container start -->
-        <section class="container mt-5">
-            <div class="row g-3 align-items-md-center">
-                <!-- news content -->
-                <div class="col-12 col-md-3 text-center">
-                    <img class="" src="images/image-1.png" alt="">
+    <div id="page-container">
+        <!-- header start -->
+        <header class="header container py-4">
+            <section class="row ">
+                <!-- Site Title  -->
+                <div class=" col ">
+                    <h1 class="fw-bold text-dark text-uppercase">Daily <span class="text-primary">News</span></h1>
                 </div>
-                <div class="col-12 col-md-9 text-justify text-center text-md-start">
-                    <div>
-                        <h3>The best fashion influencers to follow for sartorial inspiration</h3>
-                        <p>From our favourite UK influencers to the best missives from Milan and the coolest New
-                            Yorkers,
-                            read on some of the best fashion blogs out there, and for even more inspiration, do head to
-                            our
-                            separate black fashion influencer round-up.
+                <!-- header link -->
+                <div class="header-link col text-end">
+                    <a class="header-news px-1 fw-semibold fs-5 text-decoration-none" href="#">News</a>
+                    <a class="px-1 fw-semibold fs-5 text-secondary text-decoration-none" href="#">Blog</a>
+                </div>
+            </section>
+        </header>
+        <!-- header end -->
+        <!-- main start -->
+        <main class="container">
 
-                            Fancy some shopping deals? Check out these amazing sales: Zara Black Friday, ASOS Black
-                            Friday,
-                            Missoma Black Friday and Gucci Black Friday...</p>
-                    </div>
-                    <!-- news author, view, rating ,details -->
-                    <div class="d-flex justify-content-between">
-                        <div class="d-flex gap-2 align-items-center">
-                            <p><img src="images/copper.png" alt=""></p>
-                            <p class="fw-bold text-secondary">Jane Cooper</p>
-                        </div>
-                        <div class="d-flex gap-1 align-items-center">
-                            <p><img src="images/carbon_view.png" alt=""></p>
-                            <p class="fw-bold text-secondary">1.5M</p>
-                        </div>
-                        <div class="">
-                            <i class="fs-5 text-secondary fa-solid fa-arrow-right"></i>
+            <section>
+                <!-- nav container -->
+                <div id="catagory-container" class="d-flex justify-content-between flex-wrap">
 
-                        </div>
+                </div>
+            </section>
+            <!-- spinner Start -->
+            <div id="spinner" class="d-flex justify-content-center p-5 m-5 d-none">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+            <!-- spinner end -->
+            <!-- news Container start -->
+            <section>
+                <div id="no-news" class="text-center py-5 text-secondary d-none">
+                    <h3>No News Found. Please Try Another Category</h3>
+                </div>
+            </section>
+            <section class="container mt-5">
+                <div id="news-container">
+
+                </div>
+
+            </section>
+            <!-- Modal start -->
+            <!-- Button trigger modal -->
+
+            <!-- Modal -->
+            <div class="modal  fade" id="newsDetailsModal" tabindex="-1" aria-labelledby="newseModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog  modal-lg">
+                    <div id="news-details" class="modal-content">
+
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- news Container end-->
-    </main>
-    <!-- main end -->
+            <!-- Modal end -->
 
-    <!-- header end -->
+            <!-- news Container end-->
+        </main>
+        <!-- main end -->
+        <!-- footer start -->
+        <footer class="bg-black py-5">
+            <h6 class="text-center text-white"> &copy; Copyrights by <span class="text-uppercase">Daily News</span></h6>
+        </footer>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
