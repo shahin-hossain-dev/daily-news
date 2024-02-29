@@ -1,6 +1,12 @@
 /* ---------------------------
     category data load & display
 --------------------------------- */
+
+
+
+
+
+
 const categoriLoad = () => {
     const url = `https://openapi.programming-hero.com/api/news/categories`;
     fetch(url)
@@ -38,17 +44,45 @@ const categoyDataLoad = async (id = 1) => {
     try {
         const res = await fetch(url);
         const data = await res.json();
-        displayCategoryData(data.data);
+        displayCategoryData(data.data, id);
     }
     catch (error) {
         console.log(error)
     }
 }
 
-const displayCategoryData = (newses) => {
+const displayCategoryData = async (newses, id) => {
     // console.log(newses)
     const newsContainer = document.getElementById('news-container');
     newsContainer.innerHTML = '';
+
+    // navigate nav bar background color added
+
+    const res = await fetch('https://openapi.programming-hero.com/api/news/categories')
+    const data = await res.json();
+    const categories = document.querySelectorAll('.category-item');
+
+    const categoriesLoad = data.data.news_category;
+
+
+    categories.forEach(category => {
+        const items = categoriesLoad.find(categoryLoad => categoryLoad.category_id === `0${id}`);
+
+        if (items.category_name === category.innerText) {
+            console.log(category);
+            category.style.backgroundColor = 'black'
+        } else {
+            category.style.backgroundColor = ''
+        }
+
+    })
+
+
+
+
+
+
+
     const noNews = document.getElementById('no-news')
     if (newses.length === 0) {
         noNews.classList.remove('d-none')
